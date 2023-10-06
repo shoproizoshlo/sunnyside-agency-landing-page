@@ -1,0 +1,179 @@
+/*Setting to zero*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+/*--------------------*/
+/* main take up the whole screen */
+body {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1 1 auto;
+}
+
+/* navbar */
+#menu-icon {
+  display: none;
+}
+
+header {
+  padding: 2rem 0;
+  position: relative;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header li {
+  display: inline-block;
+  margin: 0 0 0 2.2rem;
+}
+
+header a {
+  color: #000;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: hsl(35, 77%, 62%);
+}
+
+/* page container */
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  position: relative;
+}
+.container {
+  max-width: 1145px;
+  width: 100%;
+  margin: 40px auto 0 auto;
+  padding: 0 15px;
+}
+
+/* footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: none;
+    padding: 0 30px;
+    margin: 0;
+  }
+
+  /* navbar */
+  body .lock {
+    overflow: hidden;
+  }
+
+  #menu-icon {
+    z-index: 4;
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    width: 70%;
+    left: 30%;
+    top: 0;
+    height: 100vh;
+    background-color: #fff;
+    padding: 10rem 0;
+    z-index: 3;
+  }
+
+  .nav-menu li {
+    display: block;
+    margin-bottom: 1rem;
+  }
+}

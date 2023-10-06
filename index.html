@@ -14,27 +14,23 @@
 
     <title>Frontend Mentor | Sunnyside agency landing page</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="stylesheet" href="./src/style.css" />
   </head>
   <header>
-    <nav>
-      <ul>
-        <li>About</li>
-        <li>Services</li>
-        <li>Projects</li>
-        <li>Contact</li>
+    <div class="container">
+      <img src="./images/logo.svg" alt="" />
+      <div id="menu-icon">
+        <img onclick="teste()" src="./images/icon-hamburger.svg" alt="" />
+      </div>
+      <ul class="nav-menu" id="menu">
+        <li><a href="">About</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">Contact</a></li>
       </ul>
-    </nav>
+    </div>
   </header>
+
   <body>
     <main>
       <div class="wrapper">
@@ -121,21 +117,31 @@
       </div>
     </main>
     <footer>
-      <menu>
-        <ul>
-          <li>About</li>
-          <li>Services</li>
-          <li>Projects</li>
-          <li>Contact</li>
-        </ul>
-      </menu>
-      <div class="socials"></div>
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+      <div class="container">
+        <menu>
+          <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Projects</a></li>
+          </ul>
+        </menu>
+        <div class="socials"></div>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Your Name Here</a>.
+        </div>
       </div>
     </footer>
+    <script>
+      function teste() {
+        if (document.getElementById("menu").style.display == "block") {
+          document.getElementById("menu").style.display = "none";
+        } else {
+          document.getElementById("menu").style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>
