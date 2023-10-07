@@ -78,6 +78,7 @@ h6 {
 body {
   display: flex;
   flex-direction: column;
+  background-color: blue;
 }
 main {
   flex: 1 1 auto;
@@ -100,7 +101,7 @@ header .container {
 }
 header li {
   display: inline-block;
-  margin: 0 0 0 2.2rem;
+  margin: 0;
 }
 
 header a {
@@ -161,19 +162,35 @@ header a:hover {
   }
 
   .nav-menu {
+    margin: 0 30px;
+    padding: 2rem;
     display: none;
+    width: 84%;
+    height: auto;
     position: absolute;
-    width: 70%;
-    left: 30%;
-    top: 0;
-    height: 100vh;
+    left: 0;
+    top: 120%;
+    text-align: center;
     background-color: #fff;
-    padding: 10rem 0;
     z-index: 3;
   }
 
   .nav-menu li {
     display: block;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+  }
+  .nav-menu li:last-child {
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+  .triangle {
+    width: 34px;
+    height: 0px;
+    border-left: 39px solid transparent;
+    border-bottom: 45px solid #ffffff;
+    position: absolute;
+    top: -33px;
+    left: 94%;
+    transform: translateX(-50%);
   }
 }
