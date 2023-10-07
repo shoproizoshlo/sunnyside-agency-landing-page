@@ -126,6 +126,7 @@ body {
   font-weight: 600;
   font-size: 18px;
   color: var(--neutral-desaturated-blue);
+  background-color: var(--neutral-white);
 }
 main {
   flex: 1 1 auto;
@@ -218,7 +219,6 @@ header a:hover {
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  background-color: var(--neutral-white);
 }
 .service-text h2 {
   font-family: "Fraunces", serif;
@@ -253,9 +253,18 @@ header a:hover {
   opacity: 0.3;
   z-index: -1;
 }
+.service-text hr:hover,
+.service-text hr:active {
+  cursor: pointer;
+  opacity: 0.9;
+}
 .section1 hr {
   color: var(--primary-yellow);
   border: 5px solid var(--primary-yellow);
+}
+.section2 hr {
+  color: var(--primary-soft-red);
+  border: 5px solid var(--primary-soft-red);
 }
 .design-text {
   padding: 0 100px;
