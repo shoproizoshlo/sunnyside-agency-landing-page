@@ -129,17 +129,79 @@ header a:hover {
   position: relative;
 }
 .container {
+  margin: 0;
+  padding: 0;
   max-width: 1440px;
   width: 100%;
-  /* margin: 40px auto 0 auto; */
-  padding: 0 15px;
 }
 
 .headline {
   height: 47vh;
 }
 
+.service-text {
+  display: flex;
+  padding: 100px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.design-text {
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -200px;
+}
+
+.testimonials {
+  text-align: center;
+  padding: 100px 0;
+}
+.testimonials-item {
+  padding: 30px;
+}
+.testimo-image img {
+  margin-bottom: 40px;
+  border-radius: 50%;
+  width: 20%;
+  height: auto;
+}
+
+/* for responsive images */
+.image-galery {
+  flex: 1;
+  min-height: 450px;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-galery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 /* footer */
+footer .logo {
+  margin: 40px;
+}
+
+menu {
+  margin-bottom: 40px;
+  width: 20%;
+}
+menu ul {
+  padding: 0;
+  margin: 0;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -163,8 +225,6 @@ header a:hover {
   }
   .container {
     max-width: none;
-    padding: 0 30px;
-    margin: 0;
   }
 
   /* navbar */
