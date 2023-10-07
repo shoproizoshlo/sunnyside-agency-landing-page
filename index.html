@@ -13,34 +13,48 @@
     />
 
     <title>Frontend Mentor | Sunnyside agency landing page</title>
-
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- style.css -->
     <link rel="stylesheet" href="./src/style.css" />
   </head>
-  <header>
-    <div class="container">
-      <img src="./images/logo.svg" alt="" />
-      <div id="menu-icon">
-        <img onclick="teste()" src="./images/icon-hamburger.svg" alt="" />
-      </div>
-      <ul class="nav-menu" id="menu">
-        <div class="triangle"></div>
-        <li><a href="">About</a></li>
-        <li><a href="">Services</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
-    </div>
-  </header>
-
   <body>
+    <div class="bg">
+      <img
+        src="./images/desktop/image-header.jpg"
+        class="bg-image"
+        alt="image header"
+      />
+    </div>
+    <header>
+      <div class="container">
+        <img src="./images/logo.svg" alt="logo" />
+        <div id="menu-icon">
+          <img onclick="teste()" src="./images/icon-hamburger.svg" alt="" />
+        </div>
+        <ul class="nav-menu" id="menu">
+          <div class="triangle"></div>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Projects</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
     <main>
       <div class="wrapper">
         <div class="container">
           <div class="headline">
             <h1>We are creatives</h1>
           </div>
-          <div class="service">
-            <div>
+          <div class="service d-flex flex-column">
+            <div class="d-flex">
               <div class="text-area">
                 <h2>Transform your brand</h2>
 
@@ -51,9 +65,14 @@
                 </p>
                 <button>Learn more</button>
               </div>
-              <div class="image"></div>
+              <div class="image">
+                <img
+                  src="./images/desktop/image-transform.jpg"
+                  alt="image Transform"
+                />
+              </div>
             </div>
-            <div>
+            <div class="d-flex">
               <div class="text-area">
                 <h2>Stand out to the right audience</h2>
 
@@ -63,57 +82,114 @@
                   extend your brand in digital places.
                 </p>
                 <button>Learn more</button>
-                <div class="image"></div>
+                <div class="image">
+                  <img
+                    src="./images/desktop/image-stand-out.jpg"
+                    alt="image stand out"
+                  />
+                </div>
               </div>
             </div>
-            <div class="image-text">
-              <div class="image"></div>
-              <h3>Graphic design</h3>
-              <p>
-                Great design makes you memorable. We deliver artwork that
-                underscores your brand message and captures potential clients’
-                attention.
-              </p>
-            </div>
-            <div class="image-text">
-              <div class="image"></div>
-              <h3>Photography</h3>
-              <p>
-                Increase your credibility by getting the most stunning,
-                high-quality photos that improve your business image.
-              </p>
+            <div class="d-flex">
+              <div class="image-text">
+                <div class="image">
+                  <img
+                    src="./images/desktop/image-graphic-design.jpg"
+                    alt="image graphic design"
+                  />
+                </div>
+                <h3>Graphic design</h3>
+                <p>
+                  Great design makes you memorable. We deliver artwork that
+                  underscores your brand message and captures potential clients’
+                  attention.
+                </p>
+              </div>
+              <div class="image-text">
+                <div class="image">
+                  <img
+                    src="./images/desktop/image-photography.jpg"
+                    alt="image photography"
+                  />
+                </div>
+                <h3>Photography</h3>
+                <p>
+                  Increase your credibility by getting the most stunning,
+                  high-quality photos that improve your business image.
+                </p>
+              </div>
             </div>
           </div>
 
           <div class="testimonials">
             <h4>Client testimonials</h4>
             <div class="testimo">
-              <p>
-                We put our trust in Sunnyside and they delivered, making sure
-                our needs were met and deadlines were always hit.
-              </p>
-              <p>Emily R.</p>
-              <p>Marketing Director</p>
+              <div class="testimo-image">
+                <img src="./images/image-emily.jpg" alt="client photo" />
+              </div>
+              <div class="testimo-text">
+                <p>
+                  We put our trust in Sunnyside and they delivered, making sure
+                  our needs were met and deadlines were always hit.
+                </p>
+                <p>Emily R.</p>
+                <p>Marketing Director</p>
+              </div>
             </div>
 
             <div class="testimo">
-              <p>
-                Sunnyside’s enthusiasm coupled with their keen interest in our
-                brand’s success made it a satisfying and enjoyable experience.
-              </p>
-              <p>Thomas S.</p>
-              <p>Chief Operating Officer</p>
+              <div class="testimo-image">
+                <img src="./images/image-thomas.jpg" alt="client photo" />
+              </div>
+              <div class="testimo-text">
+                <p>
+                  Sunnyside’s enthusiasm coupled with their keen interest in our
+                  brand’s success made it a satisfying and enjoyable experience.
+                </p>
+                <p>Thomas S.</p>
+                <p>Chief Operating Officer</p>
+              </div>
             </div>
             <div class="testimo">
-              <p>
-                Incredible end result! Our sales increased over 400% when we
-                worked with Sunnyside. Highly recommended!
-              </p>
-              <p>Jennie F.</p>
-              <p>Business Owner</p>
+              <div class="testimo-image">
+                <img src="./images/image-jennie.jpg" alt="client photo" />
+              </div>
+              <div class="testimo-text">
+                <p>
+                  Incredible end result! Our sales increased over 400% when we
+                  worked with Sunnyside. Highly recommended!
+                </p>
+                <p>Jennie F.</p>
+                <p>Business Owner</p>
+              </div>
             </div>
           </div>
-          <div class="image-galery"></div>
+          <div class="galery d-flex">
+            <div class="image-galery">
+              <img
+                src="./images/desktop/image-gallery-milkbottles.jpg"
+                alt="image gallery"
+              />
+            </div>
+            <div class="image-galery">
+              <img
+                src="./images/desktop/image-gallery-orange.jpg"
+                alt="image gallery"
+              />
+            </div>
+            <div class="image-galery">
+              <img
+                src="./images/desktop/image-gallery-cone.jpg"
+                alt="image gallery"
+              />
+            </div>
+            <div class="image-galery">
+              <img
+                src="./images/desktop/image-gallery-sugarcubes.jpg"
+                alt="image gallery"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -135,6 +211,13 @@
         </div>
       </div>
     </footer>
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- script -->
     <script>
       function teste() {
         if (document.getElementById("menu").style.display == "block") {

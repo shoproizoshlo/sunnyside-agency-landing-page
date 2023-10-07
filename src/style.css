@@ -84,6 +84,16 @@ main {
   flex: 1 1 auto;
 }
 
+.bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  position: absolute;
+  top: -30%;
+  left: 0;
+  z-index: -1;
+}
 /* navbar */
 #menu-icon {
   display: none;
@@ -120,10 +130,14 @@ header a:hover {
   position: relative;
 }
 .container {
-  max-width: 1145px;
+  max-width: 1440px;
   width: 100%;
-  margin: 40px auto 0 auto;
+  /* margin: 40px auto 0 auto; */
   padding: 0 15px;
+}
+
+.headline {
+  height: 47vh;
 }
 
 /* footer */
@@ -136,12 +150,12 @@ header a:hover {
 }
 @media screen and (max-width: 1200px) {
   .container {
-    max-width: 970px;
+    max-width: 1200px;
   }
 }
 @media screen and (max-width: 992px) {
   .container {
-    max-width: 750px;
+    max-width: 992px;
   }
 }
 @media screen and (max-width: 767px) {
