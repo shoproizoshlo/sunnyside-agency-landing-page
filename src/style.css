@@ -78,7 +78,6 @@ h6 {
 body {
   display: flex;
   flex-direction: column;
-  background-color: blue;
 }
 main {
   flex: 1 1 auto;
@@ -159,6 +158,9 @@ header a:hover {
   }
 }
 @media screen and (max-width: 767px) {
+  .bg-image {
+    top: -34%;
+  }
   .container {
     max-width: none;
     padding: 0 30px;
@@ -176,7 +178,7 @@ header a:hover {
   }
 
   .nav-menu {
-    margin: 0 30px;
+    /* margin: 0 30px; */
     padding: 2rem;
     display: none;
     width: 84%;

@@ -53,8 +53,8 @@
           <div class="headline">
             <h1>We are creatives</h1>
           </div>
-          <div class="service d-flex flex-column">
-            <div class="d-flex">
+          <div class="service d-md-flex flex-column">
+            <div class="d-md-flex">
               <div class="text-area">
                 <h2>Transform your brand</h2>
 
@@ -72,7 +72,13 @@
                 />
               </div>
             </div>
-            <div class="d-flex">
+            <div class="d-md-flex">
+              <div class="image">
+                <img
+                  src="./images/desktop/image-stand-out.jpg"
+                  alt="image stand out"
+                />
+              </div>
               <div class="text-area">
                 <h2>Stand out to the right audience</h2>
 
@@ -82,15 +88,9 @@
                   extend your brand in digital places.
                 </p>
                 <button>Learn more</button>
-                <div class="image">
-                  <img
-                    src="./images/desktop/image-stand-out.jpg"
-                    alt="image stand out"
-                  />
-                </div>
               </div>
             </div>
-            <div class="d-flex">
+            <div class="d-md-flex">
               <div class="image-text">
                 <div class="image">
                   <img
@@ -121,46 +121,49 @@
             </div>
           </div>
 
-          <div class="testimonials">
+          <div class="testimonials d-md-flex flex-column">
             <h4>Client testimonials</h4>
-            <div class="testimo">
-              <div class="testimo-image">
-                <img src="./images/image-emily.jpg" alt="client photo" />
+            <div class="d-md-flex">
+              <div class="testimonials-item">
+                <div class="testimo-image d-flex justify-content-center">
+                  <img src="./images/image-emily.jpg" alt="client photo" />
+                </div>
+                <div class="testimo-text d-flex flex-column align-items-center">
+                  <p>
+                    We put our trust in Sunnyside and they delivered, making
+                    sure our needs were met and deadlines were always hit.
+                  </p>
+                  <p>Emily R.</p>
+                  <p>Marketing Director</p>
+                </div>
               </div>
-              <div class="testimo-text">
-                <p>
-                  We put our trust in Sunnyside and they delivered, making sure
-                  our needs were met and deadlines were always hit.
-                </p>
-                <p>Emily R.</p>
-                <p>Marketing Director</p>
-              </div>
-            </div>
 
-            <div class="testimo">
-              <div class="testimo-image">
-                <img src="./images/image-thomas.jpg" alt="client photo" />
+              <div class="testimonials-item">
+                <div class="testimo-image d-flex justify-content-center">
+                  <img src="./images/image-thomas.jpg" alt="client photo" />
+                </div>
+                <div class="testimo-text d-flex flex-column align-items-center">
+                  <p>
+                    Sunnyside’s enthusiasm coupled with their keen interest in
+                    our brand’s success made it a satisfying and enjoyable
+                    experience.
+                  </p>
+                  <p>Thomas S.</p>
+                  <p>Chief Operating Officer</p>
+                </div>
               </div>
-              <div class="testimo-text">
-                <p>
-                  Sunnyside’s enthusiasm coupled with their keen interest in our
-                  brand’s success made it a satisfying and enjoyable experience.
-                </p>
-                <p>Thomas S.</p>
-                <p>Chief Operating Officer</p>
-              </div>
-            </div>
-            <div class="testimo">
-              <div class="testimo-image">
-                <img src="./images/image-jennie.jpg" alt="client photo" />
-              </div>
-              <div class="testimo-text">
-                <p>
-                  Incredible end result! Our sales increased over 400% when we
-                  worked with Sunnyside. Highly recommended!
-                </p>
-                <p>Jennie F.</p>
-                <p>Business Owner</p>
+              <div class="testimonials-item">
+                <div class="testimo-image d-flex justify-content-center">
+                  <img src="./images/image-jennie.jpg" alt="client photo" />
+                </div>
+                <div class="testimo-text d-flex flex-column align-items-center">
+                  <p>
+                    Incredible end result! Our sales increased over 400% when we
+                    worked with Sunnyside. Highly recommended!
+                  </p>
+                  <p>Jennie F.</p>
+                  <p>Business Owner</p>
+                </div>
               </div>
             </div>
           </div>
@@ -194,9 +197,12 @@
       </div>
     </main>
     <footer>
-      <div class="container">
+      <div class="container d-flex flex-column align-items-center">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="logo" />
+        </div>
         <menu>
-          <ul>
+          <ul class="d-flex">
             <li><a href="">About</a></li>
             <li><a href="">Services</a></li>
             <li><a href="">Projects</a></li>
