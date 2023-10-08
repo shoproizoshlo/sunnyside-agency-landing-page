@@ -187,7 +187,7 @@ header .container {
 }
 .nav-menu li:last-child:hover,
 .nav-menu li:last-child:active {
-  background-color:  hsla(0, 0%, 100%, 0.3);;
+  background-color: hsla(0, 0%, 100%, 0.3);
   cursor: pointer;
 }
 .nav-menu li:last-child:hover a,
@@ -198,10 +198,10 @@ header .container {
 .nav-menu a {
   color: var(--neutral-white);
   text-decoration: none;
+  transition: all 0.5 ease;
 }
 .nav-menu li:last-child a {
   color: var(--neutral-desaturated-blue);
-  transition: all 0.5 ease;
 }
 
 /* page container */
@@ -387,7 +387,7 @@ footer .logo {
 }
 
 menu {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   width: 20%;
 }
 menu ul {
@@ -402,6 +402,16 @@ menu ul a:hover,
 menu ul a:active {
   cursor: pointer;
   color: var(--neutral-white);
+}
+.socials a {
+  margin-left: 30px;
+  color: var(--primary-dark-cyan);
+}
+.socials a:hover {
+  color: var(--neutral-white);
+}
+.socials a:first-child {
+  margin-left: 0;
 }
 
 .attribution {
