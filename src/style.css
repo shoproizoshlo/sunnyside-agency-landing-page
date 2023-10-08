@@ -171,27 +171,34 @@ header .container {
   padding: 0;
   margin: 0;
 }
-header li {
+.nav-menu li {
   display: inline-block;
   margin-left: 50px;
 }
-header li:last-child {
+.nav-menu li:last-child {
   padding: 20px 30px;
-  background-color: var(--neutral-white);
-  text-transform: uppercase;
-  text-align: center;
   border-radius: 50px;
+  background-color: var(--neutral-white);
+  text-align: center;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  text-transform: uppercase;
 }
-header a {
+.nav-menu a {
   color: var(--neutral-white);
   text-decoration: none;
 }
-header li:last-child a {
+.nav-menu li:last-child a {
   color: var(--neutral-desaturated-blue);
+  /* transition: all 0.5 ease; */
 }
-
-header a:hover {
-  color: hsl(35, 77%, 62%);
+.nav-menu li:last-child:hover,
+.nav-menu li:last-child:active {
+  opacity: 0.4;
+  cursor: pointer;
+}
+.nav-menu li:last-child:hover a {
+  color: var(--neutral-white);
 }
 
 /* page container */
@@ -345,13 +352,14 @@ button:active hr {
   font-weight: 700;
 }
 .testimo-position {
+  font-size: 16px;
   color: var(--neutral-grayish-blue);
 }
 
 /* for responsive images */
 .image-galery {
   flex: 1;
-  min-height: 450px;
+  min-height: 447px;
   overflow: hidden;
   position: relative;
 }
@@ -367,6 +375,10 @@ button:active hr {
 }
 
 /* footer */
+footer {
+  background-color: hsl(166, 43%, 70%);
+}
+
 footer .logo {
   margin: 40px;
 }
@@ -378,6 +390,15 @@ menu {
 menu ul {
   padding: 0;
   margin: 0;
+}
+menu ul a {
+  color: var(--primary-dark-cyan);
+  transition: all 0.5s ease;
+}
+menu ul a:hover,
+menu ul a:active {
+  cursor: pointer;
+  color: var(--neutral-white);
 }
 
 .attribution {
