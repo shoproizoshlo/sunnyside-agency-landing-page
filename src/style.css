@@ -232,17 +232,17 @@ header a:hover {
 .service-text h2 {
   font-family: "Fraunces", serif;
   font-weight: 700;
-  font-size: 3em;
+  font-size: 2.4em;
 }
 .service-text p {
   line-height: 30px;
   color: var(--neutral-dark-grayish-blue);
 }
 .section1 {
-  padding: 145px 135px;
+  padding: 140px 135px;
 }
 .section2 {
-  padding: 145px 160px 145px 100px;
+  padding: 140px 160px 145px 100px;
 }
 .service-text button {
   background-color: unset;
@@ -308,16 +308,44 @@ button:active hr {
 
 .testimonials {
   text-align: center;
-  padding: 100px 0;
+  /* padding: 100px 0; */
+}
+.testimonials h4 {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: var(--neutral-grayish-blue);
+}
+.testimonials-container {
+  margin: 50px 0 140px 0;
+  width: 80%;
 }
 .testimonials-item {
-  padding: 30px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 400px;
 }
 .testimo-image img {
-  margin-bottom: 40px;
   border-radius: 50%;
-  width: 90px;
+  width: 70px;
   height: auto;
+}
+.testimo-text {
+  /* margin-top: 20px; */
+  padding: 0px 1em;
+  line-height: 28px;
+  color: var(--neutral-very-dark-grayish-blue);
+}
+.testimo-author {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+.testimo-position {
+  color: var(--neutral-grayish-blue);
 }
 
 /* for responsive images */
