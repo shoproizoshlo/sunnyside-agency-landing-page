@@ -183,22 +183,25 @@ header .container {
   font-family: "Fraunces", serif;
   font-weight: 700;
   text-transform: uppercase;
+  transition: all 0.5 ease;
 }
+.nav-menu li:last-child:hover,
+.nav-menu li:last-child:active {
+  background-color:  hsla(0, 0%, 100%, 0.3);;
+  cursor: pointer;
+}
+.nav-menu li:last-child:hover a,
+.nav-menu li:last-child:active a {
+  color: var(--neutral-white);
+}
+
 .nav-menu a {
   color: var(--neutral-white);
   text-decoration: none;
 }
 .nav-menu li:last-child a {
   color: var(--neutral-desaturated-blue);
-  /* transition: all 0.5 ease; */
-}
-.nav-menu li:last-child:hover,
-.nav-menu li:last-child:active {
-  opacity: 0.4;
-  cursor: pointer;
-}
-.nav-menu li:last-child:hover a {
-  color: var(--neutral-white);
+  transition: all 0.5 ease;
 }
 
 /* page container */
