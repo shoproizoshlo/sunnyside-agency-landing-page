@@ -361,7 +361,7 @@ button:active hr {
 
 .testimonials {
   text-align: center;
-  /* padding: 100px 0; */
+  padding: 120px 0;
 }
 .testimonials h4 {
   font-family: "Fraunces", serif;
@@ -372,15 +372,15 @@ button:active hr {
   color: var(--neutral-grayish-blue);
 }
 .testimonials-container {
-  margin: 50px 0 140px 0;
+  margin-top: 60px;
   width: 80%;
 }
 .testimonials-item {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  height: 400px;
+  justify-content: space-between;
+  height: 340px;
 }
 .testimo-image img {
   border-radius: 50%;
