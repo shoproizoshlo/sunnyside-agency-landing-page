@@ -140,8 +140,9 @@ main {
 }
 
 header {
-  padding: 2rem 0;
   position: absolute;
+  width: 100%;
+
   z-index: 20;
 }
 
@@ -204,17 +205,7 @@ header .container {
 .headline {
   text-align: center;
 }
-.headline h1 {
-  margin: 1.2em;
-  font-family: "Fraunces", serif;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 3.8em;
-  color: var(--neutral-white);
-}
-
-.bg {
+.headline-bg {
   flex: 0 0 33.3333%;
   min-height: 800px;
   overflow: hidden;
@@ -228,6 +219,22 @@ header .container {
   position: absolute;
   top: 0;
   left: 0;
+}
+.headline-text {
+  margin: 7%;
+}
+.headline-text h1 {
+  margin: 1.2em;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 3.8em;
+  color: var(--neutral-white);
+  z-index: 10;
+}
+.headline-text img {
+  z-index: 10;
 }
 
 .service-text {
