@@ -315,7 +315,7 @@ button:active hr {
 }
 .design-image {
   flex: 0 0 33.3333%;
-  min-height: 700px;
+  min-height: 600px;
   overflow: hidden;
   position: relative;
 }
@@ -331,10 +331,10 @@ button:active hr {
 
 .design-text {
   /* padding: 0 100px; */
-  padding: 0 14%;
+  padding: 0 23%;
   text-align: center;
-  position: relative;
-  top: -35%;
+  position: absolute;
+  top: 65%;
 }
 .design-text h3 {
   margin-bottom: 25px;
@@ -349,7 +349,7 @@ button:active hr {
   color: var(--neutral-desaturated-blue);
 }
 .design-text p {
-  padding: 0 4em;
+  padding: 0;
   line-height: 28px;
 }
 .design p {
@@ -465,14 +465,48 @@ menu ul a:active {
 .attribution a {
   color: var(--primary-desaturated-cyan);
 }
+@media screen and (max-width: 1370px) {
+  .design-image {
+    min-height: 570px;
+  }
+  .design-text {
+    padding: 0 17%;
+    bottom: 0%;
+    transform: translateY(-17%);
+  }
+}
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 1200px;
+  }
+  .design-image {
+    min-height: 500px;
+  }
+  .design-text {
+    padding: 0 14%;
+    bottom: 10%;
+    transform: translateY(-20%);
+  }
+}
+@media screen and (max-width: 1100px) {
+  .design-image {
+    min-height: 457px;
+  }
+  .design-text {
+    padding: 0 12%;
+    bottom: 10%;
+    transform: translateY(-39%);
   }
 }
 @media screen and (max-width: 992px) {
   .container {
     max-width: 992px;
+  }
+  .design-image {
+    min-height: 321px;
+  }
+  .design-text h3 {
+    margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 767px) {
