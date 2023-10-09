@@ -62,11 +62,20 @@
       <div class="wrapper">
         <div class="headline">
           <div class="headline-bg">
-            <img
-              src="./images/desktop/image-header.jpg"
-              class="bg-image"
-              alt="image header"
-            />
+            <!-- For automatic picture replacement -->
+            <picture>
+              <source
+                srcset="./images/mobile/image-header.jpg"
+                type="image/jpg"
+                media="(max-width:992px)"
+              />
+              <img
+                src="./images/desktop/image-header.jpg"
+                class="bg-image"
+                alt="image header"
+              />
+            </picture>
+
             <div class="headline-text d-flex flex-column align-items-center">
               <h1>We are creatives</h1>
               <img src="./images/icon-arrow-down.svg" alt="icon arrow down" />
@@ -75,7 +84,7 @@
         </div>
         <div class="container">
           <div class="service d-lg-flex flex-column">
-            <div class="d-lg-flex">
+            <div class="image-transform">
               <div class="service-text section1">
                 <h2>Transform your brand</h2>
 
