@@ -621,7 +621,12 @@ menu ul a:active {
     background-color: var(--neutral-white);
     z-index: 3;
   }
+  .nav-menu li {
+    display: block;
+    margin-left: 0;
 
+    margin-bottom: 40px;
+  }
   /* .nav-menu li {
     display: block;
     margin-bottom: 2rem;
@@ -631,8 +636,10 @@ menu ul a:active {
     text-transform: uppercase;
   } */
   .nav-menu li:last-child {
+    margin: 0 auto;
     /* padding: 20px 30px;
     border-radius: 50px; */
+    width: 30%;
     background-color: var(--primary-yellow);
     /* text-align: center;
     font-family: "Fraunces", serif;
