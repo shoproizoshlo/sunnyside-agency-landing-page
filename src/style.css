@@ -585,6 +585,7 @@ menu ul a:active {
   }
   header .container {
     margin: 5% auto;
+    padding: 0 4%;
   }
 
   .bg-image {
@@ -615,8 +616,8 @@ menu ul a:active {
 
     height: auto;
     position: absolute;
-    right: 7px;
-    top: 120%;
+    right: 1%;
+    top: 150%;
     text-align: center;
     background-color: var(--neutral-white);
     z-index: 3;
