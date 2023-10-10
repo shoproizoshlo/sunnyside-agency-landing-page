@@ -411,7 +411,7 @@ button:active hr {
 /* for responsive images */
 .image-galery {
   flex: 1;
-  min-height: 447px;
+  /* min-height: 447px; */
   overflow: hidden;
   position: relative;
 }
@@ -421,9 +421,9 @@ button:active hr {
   height: auto;
   object-fit: cover;
   object-position: center;
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  left: 0;
+  left: 0; */
 }
 
 /* footer */
@@ -522,8 +522,14 @@ menu ul a:active {
   }
 }
 @media screen and (max-width: 767px) {
+  header .container {
+    margin: 5% auto;
+  }
+  .headline-bg {
+    min-height: 1000px;
+  }
   .bg-image {
-    top: -34%;
+    top: 0%;
   }
   .container {
     max-width: none;
