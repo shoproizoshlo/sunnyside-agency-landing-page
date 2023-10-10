@@ -608,16 +608,17 @@ menu ul a:active {
   }
 
   .nav-menu {
-    /* margin: 0 30px; */
+    margin: 0 3%;
     padding: 2rem;
     display: none;
-    width: 84%;
+    width: 92%;
+
     height: auto;
     position: absolute;
-    left: 0;
+    right: 7px;
     top: 120%;
     text-align: center;
-    background-color: #fff;
+    background-color: var(--neutral-white);
     z-index: 3;
   }
 
@@ -630,13 +631,13 @@ menu ul a:active {
     text-transform: uppercase;
   }
   .triangle {
-    width: 34px;
+    width: 42px;
     height: 0px;
-    border-left: 39px solid transparent;
-    border-bottom: 45px solid #ffffff;
+    border-left: 41px solid transparent;
+    border-bottom: 45px solid var(--neutral-white);
     position: absolute;
-    top: -33px;
-    left: 94%;
+    top: -39px;
+    left: 97%;
     transform: translateX(-50%);
   }
 }
