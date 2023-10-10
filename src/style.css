@@ -532,6 +532,10 @@ menu ul a:active {
   .container {
     max-width: 992px;
   }
+  .image-arrow {
+    min-height: 250px;
+    top: 150px;
+  }
   .service-area {
     flex-direction: column;
   }
@@ -588,6 +592,9 @@ menu ul a:active {
   }
   .container {
     max-width: none;
+  }
+  .image-arrow {
+    top: 37px;
   }
 
   /* navbar */
