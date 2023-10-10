@@ -505,6 +505,9 @@ menu ul a:active {
   }
 }
 @media screen and (max-width: 992px) {
+  .headline-bg {
+    min-height: 1000px;
+  }
   .container {
     max-width: 992px;
   }
@@ -534,12 +537,13 @@ menu ul a:active {
   }
 }
 @media screen and (max-width: 767px) {
+  .headline-bg {
+    min-height: 800px;
+  }
   header .container {
     margin: 5% auto;
   }
-  .headline-bg {
-    min-height: 1000px;
-  }
+
   .bg-image {
     top: 0%;
   }
