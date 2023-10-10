@@ -631,13 +631,12 @@ menu ul a:active {
     text-transform: uppercase;
   }
   .triangle {
-    width: 42px;
+    width: 0px;
     height: 0px;
-    border-left: 41px solid transparent;
-    border-bottom: 45px solid var(--neutral-white);
+    border-left: 36px solid transparent;
+    border-bottom: 50px solid var(--neutral-white);
     position: absolute;
     top: -39px;
-    left: 97%;
-    transform: translateX(-50%);
+    right: 0%;
   }
 }
