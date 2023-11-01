@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://sue-sunnyside-agency-landing-page.netlify.app/](https://sue-time-tracking-dashboard.netlify.app/)
+- Live Site URL: [https://sue-sunnyside-agency-landing-page.netlify.app/](https://sue-sunnyside-agency-landing-page.netlify.app/)
 
 ## My process
 
